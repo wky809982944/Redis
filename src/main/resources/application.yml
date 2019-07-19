@@ -1,0 +1,17 @@
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    jedis:
+      pool:
+#        最大连接数
+        max-active: 8
+        max-wait: -1
+#        最大空闲数
+        max-idle: 500
+#        最小空闲数
+        min-idle: 0
+    lettuce:
+      shutdown-timeout: 0
+
